@@ -1,0 +1,328 @@
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+Description
+: Create a sticky navigation bar that remains fixed to the top after scroll
+
+Author: Stanislav Kostadinov
+Autho
+r URI: http://stanislav.it
+
+Version: 1.0.0 - 11.01.2014
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	min-height: 0px;
+}
+
+
+a {text-decoration: none;}
+
+
+
+/* This class is added on scroll */
+
+.fixed {
+
+	position: fixed; 
+
+	top: 0; 
+	
+	height: 70px; 
+
+	z-index: 1;
+	
+}
+
+
+body {
+	
+	color: #fff;
+	
+	font-family: 'open-sans-bold'; 
+	
+	font-size: 18px;
+	
+	text-align: center;
+
+}
+#myco {
+	background-color: #828282;
+	padding-top: 16px;
+}
+
+
+
+/* Font Face Settings */
+
+@font-face {
+  
+  font-family: 'open-sans-bold';
+
+	src: url('../fonts/open-sans/OpenSans-Bold.eot');
+  
+  src: url('../fonts/open-sans/OpenSans-Bold.eot?iefix') format('embedded-opentype'),
+
+		 url('../fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}	
+
+
+
+/* Navigation Settings */
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-image: url(url);
+	background-color: #000000;
+
+	}
+
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+	
+}
+
+
+nav li a {
+	color: #FFFFFF;
+	text-transform: uppercase;
+
+}
+
+
+section {
+	min-height: 100vh;
+
+
+}
+
+
+/* Screens Settings */
+
+#screen1 {
+	min-height: 100vh;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background-color: black;
+	background-image: url(../img_3.jpg);
+}
+
+
+#screen2 {
+	background-color: #2B2F2D;
+	z-index: 1;
+	width: 20%;
+	min-height: 426px;
+	margin-top: 7px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	margin-left: 7px;
+	float: left;
+	border-radius: 25px;
+}
+.left-heads {
+	text-transform: uppercase;
+	color: #ADE7D9;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+.title-heads {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	color: #E8DDDE;
+
+}
+
+.left-item   {
+	PADDING-BOTTOM: 0px;
+	LIST-STYLE-TYPE: none;
+	MARGIN: 0px;
+	PADDING-LEFT: 30px;
+	PADDING-RIGHT: 5px;
+	PADDING-TOP: 0px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: lighter;
+	display: block;
+	text-indent: -31px;
+}
+.left-item li a {
+	color: #FFFFFF;
+	font-size: 19px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: italic;
+}
+
+.mid-right
+{
+	PADDING-BOTTOM: 20px;
+	margin-top: 4px;
+	margin-right: 57px;
+	margin-bottom: 57px;
+	PADDING-LEFT: 0px;
+	WIDTH: 77%;
+	PADDING-RIGHT: 0px;
+	FLOAT: left;
+	PADDING-TOP: 20px;
+	min-width: 77%;
+	max-width: 77%;
+	margin-left: 105px;
+}
+.content {
+	width: 77%;
+	min-width: 77%;
+	max-width: 77%;
+	margin-left: 105px;
+	margin-right: 57px;
+	margin-bottom: 57px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 4px;
+	float: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: justify;
+	text-indent: 3px;
+}
+.content-img {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	left: auto;
+	right: auto;
+}
+
+
+
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+.line-separator{
+	height: 1px;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #313030;
+
+}
+
+#screen3 {
+	width: 25%;
+	background-color: #B0DD56;
+	min-height: 700px;
+
+}
+#screen4 {
+	min-height: 700px;
+	width: 77%;
+	background-color: #000000;
+	float: left;
+	margin-top: 7px;
+	margin-bottom: 21px;
+	border-radius: 25px;
+	max-width: 77%;
+	min-width: 77%;
+	padding-top: 12px;
+}
+#screen5 {
+	background-color: #000000;
+	min-height: 97px;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	clear: both;
+	padding-top: 74px;
+	top: 0px;
+}
+
+.mid-left
+{
+	PADDING-BOTTOM: 20px;
+	MARGIN: 0px;
+	PADDING-LEFT: 0px;
+	WIDTH: 236px;
+	PADDING-RIGHT: 0px;
+	FLOAT: right;
+	PADDING-TOP: 20px
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+	
+nav li {
+	padding: 24px 4px;
+	}
+
+
+nav li a {
+	font-size: 14px;
+	}
+footer {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2%;
+	background-color: #3B9FC4;
+	min-height: 32px;
+}
+
+
+}
+
+.anime-list{float:left;width:48%}
+.anime-left{margin-right:6px}
+.anime-right{margin-left:6px}
+
+
+
+
+.letter_box_up{background:none repeat scroll 0 0 #dc5c07;border:1px solid #FFFFFF;color:#fff;font-size:42px;font-weight:400;line-height:1em;margin-left:10px;margin-bottom:10px;text-align:center;width:54px}
+.letter_box_up a{color:#fff}
+.letter_box_up a:hover{color:#fff}
+.letter_box_mid{min-height:60px;height:auto;background:#1a1a1a;border:1px solid #1a1a1a;padding:10px}.letter_box_mid h3{font-size:14px}
+
+
+
+#left-column{color:#fff;font-family:"Helvetica",Helvetica,sans-serif;font-size:14px;width:660px;height:auto;float:left;padding-right:3px}
+
+.full_click{display:block}
+
+.amin_box{width:100%;height:auto;margin-top:270px;margin-bottom:10px}.amin_box 1{width:100%;height:auto;margin-top:270px;margin-bottom:10px}.amin_box2{width:100%;height:auto;margin-bottom:10px}.amin_box_up{width:290px;height:30px;padding-left:14px;font-family:"Helvetica",Helvetica,sans-serif;font-weight:bold;font-size:14px;font-style:normal;text-transform:uppercase;text-decoration:none;color:#fff;line-height:32px;background:#f2bd61;background:-moz-linear-gradient(top,#dc5c07 0,#ed9248 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#dc5c07),color-stop(100%,#ed9248));background:-webkit-linear-gradient(top,#dc5c07 0,#ed9248 100%);background:-o-linear-gradient(top,#dc5c07 0,#ed9248 100%);background:-ms-linear-gradient(top,#dc5c07 0,#ed9248 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc5c07',endColorstr='#ed9248',GradientType=0);background:linear-gradient(top,#dc5c07 0,#ef017c 100%);-moz-border-top-left-radius:0;-moz-border-top-right-radius:0;-webkit-border-top-left-radius:0;-webkit-border-top-right-radius:0;-khtml-border-top-left-radius:0;-khtml-border-top-right-radius:0;border-top-left-radius:0;border-top-right-radius:0}.amin_box_mid_chat{background-color:#0f0f0f;border:1px solid #1d1d1d;height:440px;margin-top:4px;min-height:50px}.amin_box_mid{background:none repeat scroll 0 0 #1a1a1a;min-height:50px;height:auto;border-right:1px solid #000;border-bottom:1px solid #000;border-left:1px solid #000}.amin_box_mid ol{margin-top:0;padding-top:5px}.amin_box_mid h3{font-size:14px}.amin_box_mid label{color:#d08eff}.amin_box_mid_link{width:auto;height:auto;font-family:"Helvetica Neue",Helvetica,sans-serif;font-weight:bold;font-size:11px;font-style:normal;color:#fff;line-height:26px;text-indent:10px}.amin_box_mid_link:last-child{border-bottom:0}.amin_box_mid_link:nth-child(2n+1){background-color:#1a1a1a}.amin_box_mid_link a{border-bottom:medium solid #000;font-weight:bold;font-size:13px;font-style:normal;color:#c7c7c7;line-height:26px}.amin_box_mid_link a:hover{font-weight:bold;font-size:13px;font-style:normal;color:#fff;line-height:26px}.amin_box_mid_link:hover{background-color:#dc5c07}.amin_box_down{width:308px;height:7px;float:left;background:url(../images/amin_down_dark.png) no-repeat}
+
+
+
+
+
+
+
+
+
+
+

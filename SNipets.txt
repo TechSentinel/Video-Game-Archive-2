@@ -1,0 +1,102 @@
+ <!--   var ypos,image;
+        function parallax(){
+        ypos = window.pageYOffset;
+        image= document.getElementById('screen1');
+        image.style.top = ypos * 1 + 'px';
+        }
+        window.addEventListener('scroll',parallax); -->
+
+
+.gallery {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 1em 0 2.5em;
+}
+
+.gallery-pictures {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    cursor: -webkit-grab;
+    -webkit-transform: rotateY(0);
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.gallery-picture {
+    width: 700px;
+    margin-right: 120px;
+    display: inline-block;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.gallery-pagination {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.gallery-pagination-dot {
+    background: #333;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 0 7px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.gallery-pagination-dot-selected {
+    background: #7D87AE;
+}
+
+.content {
+	text-align: center;
+}
+
+.content--related {
+	padding: 5em 0;
+}
+
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+<!--<script type="text/javascript">
+  		
+		 $(function j() {
+  		  var images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg', 'bg4.jpg','bg5.jpg','bg6.jpg','bg7.jpg','bg8.jpg','bg9.jpg','bg10.jpg','bg11.jpg','bg12.jpg','bg14.jpg','bg15.jpg','bg16.jpg','bg17.jpg','bg18.jpg','bg19.jpg','bg20.jpg','bg21.jpg','bg22.jpg','bg23.jpg','bg24.jpg','bg25.jpg','bg26.jpg','bg27.jpg','bg28.jpg','bg29.jpg'];
+     setInterval(this, 2000);
+$('#screen1').css({'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + 	 ')'});
+ 
+setInterval(j, 3000);
+
+        
+        
+  			</script>-->-->
+            
+            
+         <!-- <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>-->
+<!--<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }	
+		});
+	});
+</script>  -->       <!-- Script for sticky nav-->
+
+

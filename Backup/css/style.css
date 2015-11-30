@@ -1,0 +1,269 @@
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+Description
+: Create a sticky navigation bar that remains fixed to the top after scroll
+
+Author: Stanislav Kostadinov
+Autho
+r URI: http://stanislav.it
+
+Version: 1.0.0 - 11.01.2014
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	min-height: 0px;
+}
+
+
+a {text-decoration: none;}
+
+
+
+/* This class is added on scroll */
+
+.fixed {
+
+	position: fixed; 
+
+	top: 0; 
+	
+	height: 70px; 
+
+	z-index: 1;
+	
+}
+
+
+body {
+	
+	color: #fff;
+	
+	font-family: 'open-sans-bold'; 
+	
+	font-size: 18px;
+	
+	text-align: center;
+
+}
+#myco {
+	background-color: #828282;
+	padding-top: 16px;
+}
+
+
+
+/* Font Face Settings */
+
+@font-face {
+  
+  font-family: 'open-sans-bold';
+
+	src: url('../fonts/open-sans/OpenSans-Bold.eot');
+  
+  src: url('../fonts/open-sans/OpenSans-Bold.eot?iefix') format('embedded-opentype'),
+
+		 url('../fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}	
+
+
+
+/* Navigation Settings */
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-image: url(url);
+	background-color: #000000;
+
+	}
+
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+	
+}
+
+
+nav li a {
+	color: #FFFFFF;
+	text-transform: uppercase;
+
+}
+
+
+section {
+	min-height: 100vh;
+
+
+}
+
+
+/* Screens Settings */
+
+#screen1 {
+	min-height: 100vh;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background-color: black;
+}
+
+
+#screen2 {
+	background-color: #2B2F2D;
+	z-index: 1;
+	width: 20%;
+	min-height: 426px;
+	margin-top: 7px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	margin-left: 7px;
+	float: left;
+	border-radius: 25px;
+}
+.left-heads {
+	text-transform: uppercase;
+	color: #ADE7D9;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+.title-heads {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	color: #E8DDDE;
+
+}
+
+.left-item   {
+	PADDING-BOTTOM: 0px;
+	LIST-STYLE-TYPE: none;
+	MARGIN: 0px;
+	PADDING-LEFT: 30px;
+	PADDING-RIGHT: 5px;
+	PADDING-TOP: 0px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: lighter;
+	display: block;
+	text-indent: -31px;
+}
+.left-item li a {
+	color: #FFFFFF;
+	font-size: 19px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: italic;
+}
+
+.mid-right
+{
+	PADDING-BOTTOM: 20px;
+	margin-top: 4px;
+	margin-right: 57px;
+	margin-bottom: 57px;
+	PADDING-LEFT: 0px;
+	WIDTH: 77%;
+	PADDING-RIGHT: 0px;
+	FLOAT: left;
+	PADDING-TOP: 20px;
+	min-width: 77%;
+	max-width: 77%;
+	margin-left: 105px;
+}
+
+}
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+.line-separator{
+	height: 1px;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #313030;
+
+}
+
+#screen3 {
+	width: 25%;
+	background-color: #B0DD56;
+	min-height: 700px;
+
+}
+#screen4 {
+	min-height: 700px;
+	width: 77%;
+	background-color: #000000;
+	float: left;
+	margin-top: 7px;
+	margin-bottom: 21px;
+	border-radius: 25px;
+	max-width: 77%;
+	min-width: 77%;
+	padding-top: 12px;
+}
+#screen5 {
+	background-color: #000000;
+	min-height: 97px;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	clear: both;
+	padding-top: 74px;
+	top: 0px;
+}
+
+.mid-left
+{
+	PADDING-BOTTOM: 20px;
+	MARGIN: 0px;
+	PADDING-LEFT: 0px;
+	WIDTH: 236px;
+	PADDING-RIGHT: 0px;
+	FLOAT: right;
+	PADDING-TOP: 20px
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+	
+nav li {
+	padding: 24px 4px;
+	}
+
+
+nav li a {
+	font-size: 14px;
+	}
+footer {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2%;
+	background-color: #3B9FC4;
+	min-height: 32px;
+}
+
+}
